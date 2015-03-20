@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baymax"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingTop="80dp">
+
+        <TextView
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:textSize="17dp"
+            android:text="@string/onCreate"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/create_counter"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_rounder_corners"
+            android:paddingLeft="2dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:textSize="17dp"
+            android:text="@string/onStart"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/start_counter"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_rounder_corners"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:textSize="17dp"
+            android:text="@string/onResume"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/resume_counter"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_rounder_corners"
+            android:paddingLeft="2dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_resume"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp">
+
+        <TextView
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:focusable="false"
+            android:textSize="17dp"
+            android:text="@string/onRestart"
+            android:textColor="@color/text_color" />
+
+        <EditText
+            android:id="@+id/restart_counter"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edittext_rounder_corners"
+            android:paddingLeft="2dp"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bLaunchActivityTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_restart"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="17dp"
+        android:background="@color/button_background"
+        android:padding="5dp"
+        android:text="@string/button"
+        android:textColor="@color/button_text_color" />
+
+</RelativeLayout>
